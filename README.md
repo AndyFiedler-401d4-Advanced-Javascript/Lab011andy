@@ -5,7 +5,7 @@ Project Name
 Author: Andy Fiedler
 
 Links and Resources
-[submission PR]
+[submission PR] https://github.com/AndyFiedler-401d4-Advanced-Javascript/Lab011andy/pull/1
 [travis]
 
 Modules
