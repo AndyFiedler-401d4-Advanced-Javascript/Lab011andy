@@ -5,9 +5,13 @@ const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
 
+
 // Esoteric Resources
 const errorHandler = require( './middleware/error.js');
 const notFound = require( './middleware/404.js' );
+const router = require('./auth/router.js');
+const userModels = require('./auth/users-models.js');
+const middleWare = require('./auth/middleware.js');
 
 // Prepare the express app
 const app = express();
@@ -18,10 +22,14 @@ app.use(morgan('dev'));
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
+app.use(middleWare());
+app.use(router());
+app.use(userModels());
 
 // Catchalls
 app.use(notFound);
 app.use(errorHandler);
+
 
 module.exports = {
   server: app,
