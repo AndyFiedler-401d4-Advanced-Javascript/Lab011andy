@@ -6,7 +6,7 @@ Author: Andy Fiedler
 
 Links and Resources
 [submission PR] https://github.com/AndyFiedler-401d4-Advanced-Javascript/Lab011andy/pull/1
-[travis]
+[travis] https://travis-ci.com/search/lab011andy
 
 Modules
 validator.js
